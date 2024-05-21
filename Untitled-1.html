@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Feedback System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Customer Feedback</h1>
+    </header>
+    <main>
+      <section id="feedback-form">
+        <h2>Leave Your Feedback</h2>
+        <form action="submit_feedback.php" method="post">
+          <label for="rating">Rating:</label>
+          <select name="rating" id="rating">
+            <option value="1">1 - Poor</option>
+            <option value="2">2 - Fair</option>
+            <option value="3">3 - Good</option>
+            <option value="4">4 - Very Good</option>
+            <option value="5">5 - Excellent</option>
+          </select>
+          <label for="comment">Comment:</label>
+          <textarea name="comment" id="comment" rows="5"></textarea>
+          <button type="submit">Submit Feedback</button>
+        </form>
+      </section>
+      <section id="feedback-list">
+        <h2>Recent Feedback</h2>
+        <ul></ul>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
